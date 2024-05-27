@@ -14,7 +14,7 @@ export class CardListaFormularioComponent {
 
   adicionarItem() {
     this.listaItens.push({ ...this.novoItem });
-    // Limpa o novo item depois de adicioná-lo à lista
+
     this.novoItem.codigo = '';
     this.novoItem.descricao = '';
   }
