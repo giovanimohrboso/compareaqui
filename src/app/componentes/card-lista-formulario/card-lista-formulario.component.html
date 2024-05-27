@@ -1,0 +1,11 @@
+<div>
+  <input type="text" [(ngModel)]="novoItem.codigo" placeholder="Codigo">
+  <input type="text" [(ngModel)]="novoItem.descricao" placeholder="Descrição">
+  <button (click)="adicionarItem()">Adicionar</button>
+</div>
+
+<ul>
+  <li *ngFor="let item of listaItens">
+    <strong>{{ item.codigo }}</strong>: {{ item.descricao }}
+  </li>
+</ul>
